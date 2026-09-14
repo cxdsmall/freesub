@@ -5,36 +5,27 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇹🇷 土耳其 (Turkey) 01
-  server: 185.87.24.167
+  server: 185.87.24.4
   port: 2085
   udp: true
   type: vless
-  uuid: c9373ff0-c263-4949-885f-366671f3c6a1
+  uuid: 128314f6-f09a-426f-b758-b8e559c38ddb
   network: grpc
   grpc-opts:
     grpc-service-name: vless
 - name: 🇹🇷 土耳其 (Turkey) 02
-  server: 185.87.24.2
-  port: 2085
+  server: 188.132.174.236
+  port: 1080
   udp: true
-  type: vless
-  uuid: a1d1b142-17c5-4472-99de-df220df4d4fb
-  network: grpc
-  grpc-opts:
-    grpc-service-name: vless
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: rSeYcig_XBy8q3k33NpK3A
 - name: 🇹🇷 土耳其 (Turkey) 03
-  server: 45.74.159.233
-  port: 56659
+  server: add.life-pro.ir
+  port: 8082
   udp: true
   type: vless
-  uuid: 12af43c3-84b4-4248-878b-b75f35835487
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: qLggZ7qospn6X7UEO1zSoohNXK4Y1EX7Hx2sJeWfvw0
-    short-id: 9aa3a3f599f3d5d0
-  servername: amp-api-edge.apps.apple.com
-  client-fingerprint: chrome
+  uuid: 79f98593-6a21-4783-a425-3d5609a79df1
 - name: 🇹🇷 土耳其 (Turkey) 04
   server: shop.neexbyte.ir
   port: 8443
@@ -47,6 +38,20 @@ proxies:
   network: ws
   ws-opts:
     path: /
+- name: 🇹🇷 土耳其 (Turkey) 05
+  server: 172.67.134.170
+  port: 443
+  udp: true
+  type: vless
+  uuid: 50414e45-4c5f-5a45-5553-635698a6bb9c
+  tls: true
+  servername: jdzit4e4urks.xwzohsebujps.workers.dev
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /stream/PANEL_ZEUS/635698a6bb9c/loc-0
+    headers:
+      Host: jdzit4e4urks.xwzohsebujps.workers.dev
 proxy-groups:
 - name: PROXIES
   type: select
@@ -56,6 +61,7 @@ proxy-groups:
   - 🇹🇷 土耳其 (Turkey) 02
   - 🇹🇷 土耳其 (Turkey) 03
   - 🇹🇷 土耳其 (Turkey) 04
+  - 🇹🇷 土耳其 (Turkey) 05
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -65,5 +71,6 @@ proxy-groups:
   - 🇹🇷 土耳其 (Turkey) 02
   - 🇹🇷 土耳其 (Turkey) 03
   - 🇹🇷 土耳其 (Turkey) 04
+  - 🇹🇷 土耳其 (Turkey) 05
 rules:
 - MATCH,PROXIES
