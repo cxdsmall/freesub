@@ -4,32 +4,8 @@
   },
   "outbounds": [
     {
-      "type": "vless",
-      "tag": "🇪🇪 爱沙尼亚 (Estonia) 01",
-      "server": "91.215.40.6",
-      "server_port": 443,
-      "uuid": "f24c25fe-937d-414b-8180-d54c96220e71",
-      "tls": {
-        "enabled": true,
-        "server_name": "id.dframe.app",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "ivgTfLR13A6xBsicIA28OPoav2tXlsstTTmGuETfnSk",
-          "short_id": "5c766813929a1fdd"
-        }
-      },
-      "transport": {
-        "type": "grpc",
-        "service_name": "grpc"
-      }
-    },
-    {
       "type": "trojan",
-      "tag": "🇪🇪 爱沙尼亚 (Estonia) 02",
+      "tag": "🇪🇪 爱沙尼亚 (Estonia) 01",
       "server": "109.206.241.10",
       "server_port": 449,
       "password": "oiiaB38ywjEHCWRs_O_a_1113_Il_KeyyyHop_Bes1",
@@ -40,12 +16,88 @@
       }
     },
     {
+      "type": "vless",
+      "tag": "🇪🇪 爱沙尼亚 (Estonia) 02",
+      "server": "94.183.170.135",
+      "server_port": 8443,
+      "uuid": "06c4e938-2954-478f-a870-ca1b163e30e9",
+      "tls": {
+        "enabled": true,
+        "server_name": "estproxy4.lockdwn.com",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇪🇪 爱沙尼亚 (Estonia) 03",
+      "server": "185.174.135.250",
+      "server_port": 443,
+      "uuid": "b3a11068-1a7e-4643-85de-7c82cce46943",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.google.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "wGMBs7bvzyzA0-OUiwSkOOTDEMdxEOsSdRzxiP8GGQY",
+          "short_id": ""
+        }
+      },
+      "transport": {
+        "type": "grpc",
+        "service_name": "TunService"
+      }
+    },
+    {
+      "type": "hysteria2",
+      "tag": "🇪🇪 爱沙尼亚 (Estonia) 04",
+      "server": "31.76.71.63",
+      "server_port": 443,
+      "password": "sOiWCQ2AdIV0OWNuqQVyWp4JZnRxdyLROSjX",
+      "tls": {
+        "enabled": true,
+        "server_name": "cabinet.wwwinternetvideo.click",
+        "insecure": true
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇪🇪 爱沙尼亚 (Estonia) 05",
+      "server": "45.11.27.86",
+      "server_port": 443,
+      "uuid": "a2738d8d-ed26-4b13-a4a2-b89c7238cd10",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "5post-gate.x5.ru",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "IBzFSziv_xISB-Q6X90PocTBde6jb4X6swEvdZQhqzk",
+          "short_id": "d0aae44f"
+        }
+      }
+    },
+    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
         "🇪🇪 爱沙尼亚 (Estonia) 01",
-        "🇪🇪 爱沙尼亚 (Estonia) 02"
+        "🇪🇪 爱沙尼亚 (Estonia) 02",
+        "🇪🇪 爱沙尼亚 (Estonia) 03",
+        "🇪🇪 爱沙尼亚 (Estonia) 04",
+        "🇪🇪 爱沙尼亚 (Estonia) 05"
       ]
     },
     {
@@ -53,7 +105,10 @@
       "tag": "auto",
       "outbounds": [
         "🇪🇪 爱沙尼亚 (Estonia) 01",
-        "🇪🇪 爱沙尼亚 (Estonia) 02"
+        "🇪🇪 爱沙尼亚 (Estonia) 02",
+        "🇪🇪 爱沙尼亚 (Estonia) 03",
+        "🇪🇪 爱沙尼亚 (Estonia) 04",
+        "🇪🇪 爱沙尼亚 (Estonia) 05"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

@@ -5,22 +5,27 @@
   "outbounds": [
     {
       "type": "vless",
-      "tag": "🇬🇹 GT 01",
-      "server": "185.47.254.251",
+      "tag": "🇮🇶 IQ 01",
+      "server": "104.21.34.106",
       "server_port": 443,
-      "uuid": "878fb7f7-fc65-465e-a352-17c7216c6f3d",
-      "flow": "xtls-rprx-vision",
+      "uuid": "d8c14c5c-a80a-4f6f-a5fb-52071849c443",
       "tls": {
         "enabled": true,
-        "server_name": "gateway.icloud.com",
+        "server_name": "CgxGqchEiAMnA-jkS01FiDlsnqOjwF-S.ALIAmA.WOrKErS.DeV",
+        "insecure": false,
+        "alpn": [
+          "http/1.1"
+        ],
         "utls": {
           "enabled": true,
           "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "6-_ZidygR8PRt4gtHlGCAW-PPmjEIm7Wn7MZqJU1z1Q",
-          "short_id": "6c059ecfddf9b179"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/eyJqdW5rIjoiZTFWRGJFS0NUd2F2NkRmIiwicHJvdG9jb2wiOiJ2bCIsIm1vZGUiOiJwcm94eWlwIiwicGFuZWxJUHMiOltdfQ",
+        "headers": {
+          "Host": "cgxgqcheiamna-jks01fidlsnqojwf-s.aliama.workers.dev"
         }
       }
     },
@@ -29,14 +34,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇬🇹 GT 01"
+        "🇮🇶 IQ 01"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇬🇹 GT 01"
+        "🇮🇶 IQ 01"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
