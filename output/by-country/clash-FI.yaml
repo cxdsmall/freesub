@@ -5,35 +5,31 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇫🇮 芬兰 (Finland) 01
-  server: 150.241.71.148
-  port: 448
-  udp: true
-  type: trojan
-  password: 6fY77UmuJ6BEK7n0qv433JrPNjCMeZQV
-  sni: kiev.gosgenarchive.com
-  skip-cert-verify: false
-  network: grpc
-  grpc-opts:
-    grpc-service-name: TrojanGRPC
-- name: 🇫🇮 芬兰 (Finland) 02
-  server: 82.47.186.18
-  port: 19290
-  udp: true
-  type: ss
-  cipher: aes-128-gcm
-  password: o2rw2hICwu1blrr_gZAl2Q
-- name: 🇫🇮 芬兰 (Finland) 03
-  server: 185.255.179.11
-  port: 9443
+  server: 31.76.80.238
+  port: 443
   udp: true
   type: vless
-  uuid: d9d0f208-d582-41d5-bb7b-742671402810
+  uuid: 9bbd487f-8f84-4ad7-b897-681c3f7d95dc
+  flow: xtls-rprx-vision
   tls: true
-  servername: hub-fi-02.hanvpn.cc
-  skip-cert-verify: false
-  network: grpc
-  grpc-opts:
-    grpc-service-name: fi02-grpc-8e47a
+  reality-opts:
+    public-key: j7_ysAZxK5vBkMqvu0r8_UUuR3Qp7Yml3fXFDGR5x3w
+    short-id: 573703f224b75e8c
+  servername: jujujuj.mervi.icu
+  client-fingerprint: chrome
+- name: 🇫🇮 芬兰 (Finland) 02
+  server: finkafsb.finiki.lol
+  port: 443
+  udp: true
+  type: vless
+  uuid: 4bdeee92-97e8-414d-bef6-ec1d5e2ab73b
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: YBKHp6R7xp2Ss2kxbvDNMFPpRrf3oh1wQ2dVMukPHmA
+    short-id: d110331f200987ae
+  servername: finkafsb.finiki.lol
+  client-fingerprint: random
 proxy-groups:
 - name: PROXIES
   type: select
@@ -41,7 +37,6 @@ proxy-groups:
   - AUTO
   - 🇫🇮 芬兰 (Finland) 01
   - 🇫🇮 芬兰 (Finland) 02
-  - 🇫🇮 芬兰 (Finland) 03
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -49,6 +44,5 @@ proxy-groups:
   proxies:
   - 🇫🇮 芬兰 (Finland) 01
   - 🇫🇮 芬兰 (Finland) 02
-  - 🇫🇮 芬兰 (Finland) 03
 rules:
 - MATCH,PROXIES
