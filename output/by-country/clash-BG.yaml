@@ -5,19 +5,14 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇧🇬 保加利亚 (Bulgaria) 01
-  server: 45.130.125.126
+  server: 192.145.31.5
   port: 443
   udp: true
   type: vless
-  uuid: b69b43d1-091d-4d7c-90b2-7a8bbad9d6a9
-  tls: true
-  servername: BItter-CreDIT-61b8.b76EbA0aBb.wORkerS.dEv
-  skip-cert-verify: false
+  uuid: 9f73cf9a-c68f-4e6d-90f0-e66b64f52f8a
   network: ws
   ws-opts:
-    path: /eyJqdW5rIjoiY0U2T212Y21yeEhUZHRKYSIsInByb3RvY29sIjoidmwiLCJtb2RlIjoicHJveHlpcCIsInBhbmVsSVBzIjpbXX0
-    headers:
-      Host: BItter-CreDIT-61b8.b76EbA0aBb.wORkerS.dEv
+    path: /
 - name: 🇧🇬 保加利亚 (Bulgaria) 02
   server: 192.145.31.5
   port: 8443
@@ -26,7 +21,7 @@ proxies:
   uuid: 9f73cf9a-c68f-4e6d-90f0-e66b64f52f8a
   tls: true
   servername: neth9.lunariai.ru
-  skip-cert-verify: false
+  skip-cert-verify: true
   client-fingerprint: chrome
 - name: 🇧🇬 保加利亚 (Bulgaria) 03
   server: 108.165.233.223
@@ -44,16 +39,17 @@ proxies:
     headers:
       Host: netlivpn4813.ddhshhshs.workers.dev
 - name: 🇧🇬 保加利亚 (Bulgaria) 04
-  server: 45.9.156.103
-  port: 443
+  server: 136.175.82.85
+  port: 18775
   udp: true
   type: vless
-  uuid: e633de28-bfc0-4aca-aa67-e2e12e2c9e58
+  uuid: 9ae5940b-0278-403d-a1e1-9dddc47bdcf6
   flow: xtls-rprx-vision
   tls: true
   reality-opts:
-    public-key: SARDrN_d46PsugT2k5ILoQAJqaA1eCOZhe1BjKMonj8
-  servername: mzone.bg.3cloudhost.com
+    public-key: oR75S6pg_RDAKIuzv_WrCiwaUqqFoek2iuo5N22llQQ
+    short-id: 6ba85179e30d4fc2
+  servername: addons.mozilla.org
   client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES

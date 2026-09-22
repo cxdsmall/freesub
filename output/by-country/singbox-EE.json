@@ -28,15 +28,15 @@
       }
     },
     {
-      "type": "hysteria2",
+      "type": "trojan",
       "tag": "🇪🇪 爱沙尼亚 (Estonia) 02",
-      "server": "217.60.182.79",
-      "server_port": 443,
-      "password": "sOiWCQ2AdIV0OWNuqQVyWp4JZnRxdyLROSjX",
+      "server": "109.206.241.10",
+      "server_port": 449,
+      "password": "oiiaB38ywjEHCWRs_O_a_1113_Il_KeyyyHop_Bes1",
       "tls": {
         "enabled": true,
-        "server_name": "cabinet.wwwinternetvideo.click",
-        "insecure": false
+        "server_name": "109.206.241.10",
+        "insecure": true
       }
     },
     {
@@ -69,26 +69,19 @@
       "tls": {
         "enabled": true,
         "server_name": "estproxy4.lockdwn.com",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        }
+        "insecure": false
       }
     },
     {
       "type": "hysteria2",
       "tag": "🇪🇪 爱沙尼亚 (Estonia) 05",
-      "server": "tishina-axe.dedyn.io",
-      "server_port": 8443,
-      "password": "319ed24b1c7203aa",
+      "server": "31.76.71.63",
+      "server_port": 443,
+      "password": "sOiWCQ2AdIV0OWNuqQVyWp4JZnRxdyLROSjX",
       "tls": {
         "enabled": true,
-        "server_name": "tishina-axe.dedyn.io",
-        "insecure": true,
-        "alpn": [
-          "h3"
-        ]
+        "server_name": "cabinet.wwwinternetvideo.click",
+        "insecure": true
       }
     },
     {

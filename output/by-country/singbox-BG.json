@@ -6,23 +6,12 @@
     {
       "type": "vless",
       "tag": "🇧🇬 保加利亚 (Bulgaria) 01",
-      "server": "45.130.125.126",
+      "server": "192.145.31.5",
       "server_port": 443,
-      "uuid": "b69b43d1-091d-4d7c-90b2-7a8bbad9d6a9",
-      "tls": {
-        "enabled": true,
-        "server_name": "BItter-CreDIT-61b8.b76EbA0aBb.wORkerS.dEv",
-        "insecure": false,
-        "alpn": [
-          "http/1.1"
-        ]
-      },
+      "uuid": "9f73cf9a-c68f-4e6d-90f0-e66b64f52f8a",
       "transport": {
         "type": "ws",
-        "path": "/eyJqdW5rIjoiY0U2T212Y21yeEhUZHRKYSIsInByb3RvY29sIjoidmwiLCJtb2RlIjoicHJveHlpcCIsInBhbmVsSVBzIjpbXX0",
-        "headers": {
-          "Host": "BItter-CreDIT-61b8.b76EbA0aBb.wORkerS.dEv"
-        }
+        "path": "/"
       }
     },
     {
@@ -34,7 +23,7 @@
       "tls": {
         "enabled": true,
         "server_name": "neth9.lunariai.ru",
-        "insecure": false,
+        "insecure": true,
         "utls": {
           "enabled": true,
           "fingerprint": "chrome"
@@ -67,21 +56,21 @@
     {
       "type": "vless",
       "tag": "🇧🇬 保加利亚 (Bulgaria) 04",
-      "server": "45.9.156.103",
-      "server_port": 443,
-      "uuid": "e633de28-bfc0-4aca-aa67-e2e12e2c9e58",
+      "server": "136.175.82.85",
+      "server_port": 18775,
+      "uuid": "9ae5940b-0278-403d-a1e1-9dddc47bdcf6",
       "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "mzone.bg.3cloudhost.com",
+        "server_name": "addons.mozilla.org",
         "utls": {
           "enabled": true,
           "fingerprint": "chrome"
         },
         "reality": {
           "enabled": true,
-          "public_key": "SARDrN_d46PsugT2k5ILoQAJqaA1eCOZhe1BjKMonj8",
-          "short_id": ""
+          "public_key": "oR75S6pg_RDAKIuzv_WrCiwaUqqFoek2iuo5N22llQQ",
+          "short_id": "6ba85179e30d4fc2"
         }
       }
     },

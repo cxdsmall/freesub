@@ -5,7 +5,7 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇦🇪 阿联酋 (UAE) 01
-  server: 104.21.67.122
+  server: 172.67.221.230
   port: 443
   udp: true
   type: vless
@@ -20,17 +20,6 @@ proxies:
     headers:
       Host: novantunnel.tech
 - name: 🇦🇪 阿联酋 (UAE) 02
-  server: 45.130.125.201
-  port: 80
-  udp: true
-  type: vless
-  uuid: dc8a9493-c54a-459e-d060-81a700000001
-  network: ws
-  ws-opts:
-    path: /sync
-    headers:
-      Host: nahan-core.netizo09.workers.dev
-- name: 🇦🇪 阿联酋 (UAE) 03
   server: 130.49.161.70
   port: 443
   udp: true
@@ -40,27 +29,27 @@ proxies:
   skip-cert-verify: false
   obfs: salamander
   obfs-password: rG07s3COMIEvdnQipRyWzx_H_2xygNC3
-- name: 🇦🇪 阿联酋 (UAE) 04
-  server: 85.204.107.174
-  port: 8080
-  udp: true
-  type: hysteria2
-  password: Jz40_mIJ934vK0_k9D3jz92_Vx48q_GHa1_sz0
-  sni: hopp-romania-new.roxa.org
-  skip-cert-verify: true
-- name: 🇦🇪 阿联酋 (UAE) 05
+- name: 🇦🇪 阿联酋 (UAE) 03
   server: 31.58.181.88
   port: 8443
   udp: true
   type: vless
-  uuid: ce57910d-b7a9-4eaa-9a94-a1dda0d08026
+  uuid: 2202f333-f8d6-4e13-a6c7-0b437e42f5e3
   flow: xtls-rprx-vision
   tls: true
   reality-opts:
     public-key: AERbWB2uslqIzm1hSlOZZEH3Y9qg_zlWRRyLfh97kXc
   servername: tradingview.com
   client-fingerprint: firefox
-- name: 🇦🇪 阿联酋 (UAE) 06
+- name: 🇦🇪 阿联酋 (UAE) 04
+  server: 85.204.107.176
+  port: 8080
+  udp: true
+  type: hysteria2
+  password: Jz40_mIJ934vK0_k9D3jz92_Vx48q_GHa1_sz0
+  sni: hopp-romania-new.roxa.org
+  skip-cert-verify: false
+- name: 🇦🇪 阿联酋 (UAE) 05
   server: uae.unixzone.us
   port: 22573
   udp: true
@@ -69,32 +58,8 @@ proxies:
   network: ws
   ws-opts:
     path: /
-- name: 🇦🇪 阿联酋 (UAE) 07
-  server: jpzzqqnzdbgwhbhzsrgh.cfooov.xyz
-  port: 48948
-  udp: true
-  type: vless
-  uuid: 17ab31f7-c021-4aec-83b2-ab48de8886bd
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: AzOs0Mh5_Ax-CrvFYTYXAp78syFjgkotED2cKO_kbyw
-    short-id: 461b0192ec23b6
-  servername: www.lamer.com.hk
-  client-fingerprint: chrome
-- name: 🇦🇪 阿联酋 (UAE) 08
-  server: xjpjus.jiedddym.com
-  port: 14352
-  udp: true
-  type: vless
-  uuid: 17ab31f7-c021-4aec-83b2-ab48de8886bd
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: AzOs0Mh5_Ax-CrvFYTYXAp78syFjgkotED2cKO_kbyw
-    short-id: 461b0192ec23b6
-  servername: www.lamer.com.hk
-  client-fingerprint: chrome
+    headers:
+      Host: uae.unixzone.us
 proxy-groups:
 - name: PROXIES
   type: select
@@ -105,9 +70,6 @@ proxy-groups:
   - 🇦🇪 阿联酋 (UAE) 03
   - 🇦🇪 阿联酋 (UAE) 04
   - 🇦🇪 阿联酋 (UAE) 05
-  - 🇦🇪 阿联酋 (UAE) 06
-  - 🇦🇪 阿联酋 (UAE) 07
-  - 🇦🇪 阿联酋 (UAE) 08
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -118,8 +80,5 @@ proxy-groups:
   - 🇦🇪 阿联酋 (UAE) 03
   - 🇦🇪 阿联酋 (UAE) 04
   - 🇦🇪 阿联酋 (UAE) 05
-  - 🇦🇪 阿联酋 (UAE) 06
-  - 🇦🇪 阿联酋 (UAE) 07
-  - 🇦🇪 阿联酋 (UAE) 08
 rules:
 - MATCH,PROXIES
