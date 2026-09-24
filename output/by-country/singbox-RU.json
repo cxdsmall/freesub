@@ -4,73 +4,68 @@
   },
   "outbounds": [
     {
-      "type": "vless",
+      "type": "trojan",
       "tag": "🇷🇺 俄罗斯 (Russia) 01",
-      "server": "94.228.171.159",
-      "server_port": 8443,
-      "uuid": "5b754a1a-11aa-4df9-a8ba-44af9a579fe1",
-      "flow": "xtls-rprx-vision",
+      "server": "172.67.191.121",
+      "server_port": 443,
+      "password": "Telegram_healer_config",
       "tls": {
         "enabled": true,
-        "server_name": "de.b2ai.top",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "hcjZwWlIplwEKT-Ea-vTM2n4jwiTCeL9wTUZG0WgCj0",
-          "short_id": ""
+        "server_name": "47hr9isj-655383snd63hjap38q6t.k-f3vpqaltfsxbtaxe.workers.dev",
+        "insecure": false,
+        "alpn": [
+          "http/1.1"
+        ]
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/tr/V2VWNDZAAEIdXVjOCkLfJnefnR5Pum?ed=2560",
+        "headers": {
+          "Host": "47hr9isj-655383snd63hjap38q6t.k-f3vpqaltfsxbtaxe.workers.dev"
         }
       }
     },
     {
       "type": "hysteria2",
       "tag": "🇷🇺 俄罗斯 (Russia) 02",
-      "server": "91.196.32.163",
-      "server_port": 443,
-      "password": "mkL3AfdSZIpTWRB9TcWPn9vywPGN89MRHg3ToRDj",
-      "tls": {
-        "enabled": true,
-        "server_name": "91.196.32.163",
-        "insecure": true
-      }
-    },
-    {
-      "type": "hysteria2",
-      "tag": "🇷🇺 俄罗斯 (Russia) 03",
       "server": "91.240.86.70",
       "server_port": 22443,
       "password": "3f63c86c-ac4a-4900-85cf-4fedf93c2ca5",
       "tls": {
         "enabled": true,
         "server_name": "hy.quattro-tech.ru",
-        "insecure": true
+        "insecure": false
       }
     },
     {
       "type": "vless",
-      "tag": "🇷🇺 俄罗斯 (Russia) 04",
-      "server": "45.12.75.242",
-      "server_port": 26424,
-      "uuid": "633f424e-2b11-48da-a6b3-a849dd71456f",
+      "tag": "🇷🇺 俄罗斯 (Russia) 03",
+      "server": "fbsv6.guardora.pro",
+      "server_port": 443,
+      "uuid": "bc5ec86c-3e65-4272-994c-59a924c72a68",
       "tls": {
         "enabled": true,
-        "server_name": "ya.ru",
+        "server_name": "fbsv6.guardora.pro",
+        "insecure": false,
+        "alpn": [
+          "http/1.1"
+        ],
         "utls": {
           "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "l8AubqcxQO-HRFJy4pZL1vbLOo-eXit69s-XulSELE0",
-          "short_id": "23103e1e"
+          "fingerprint": "firefox"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/ws",
+        "headers": {
+          "Host": "fbsv6.guardora.pro"
         }
       }
     },
     {
       "type": "vless",
-      "tag": "🇷🇺 俄罗斯 (Russia) 05",
+      "tag": "🇷🇺 俄罗斯 (Russia) 04",
       "server": "46.8.200.91",
       "server_port": 443,
       "uuid": "b8201bab-fa6c-4f6e-b289-b5da660c6f69",
@@ -84,6 +79,23 @@
         "path": "/cdn/v3/live",
         "headers": {
           "Host": "cf3.rumedia-cdn.com"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇷🇺 俄罗斯 (Russia) 05",
+      "server": "130.49.218.208",
+      "server_port": 5432,
+      "uuid": "cc01f435-d561-4525-bf1f-7a9876d33207",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "130.49.218.208",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
         }
       }
     },
