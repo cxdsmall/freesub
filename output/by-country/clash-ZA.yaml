@@ -4,26 +4,24 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇨🇿 捷克 (Czech) 01
-  server: 153.76.185.148
-  port: 3090
+- name: 🇿🇦 南非 (South Africa) 01
+  server: 102.37.156.224
+  port: 443
   udp: true
-  type: vless
-  uuid: 1552d599-a036-4389-a5c0-bf14dfaddc1a
-  network: grpc
-  grpc-opts:
-    grpc-service-name: vless
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: aduB9HGxQHjA2SBMRjkHX6
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇨🇿 捷克 (Czech) 01
+  - 🇿🇦 南非 (South Africa) 01
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇨🇿 捷克 (Czech) 01
+  - 🇿🇦 南非 (South Africa) 01
 rules:
 - MATCH,PROXIES
