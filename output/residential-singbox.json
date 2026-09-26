@@ -6,12 +6,12 @@
     {
       "type": "vless",
       "tag": "🇯🇵 日本 (Japan) 01 (家宽)",
-      "server": "5.9.117.252",
-      "server_port": 4433,
-      "uuid": "ef286b0e-21ed-4e2b-9110-e2ddc7627892",
+      "server": "128.241.25.215",
+      "server_port": 30036,
+      "uuid": "196b7228-58df-4bcf-af2a-2e96608d5add",
       "tls": {
         "enabled": true,
-        "server_name": "9-7u3b6e.wzkija0v0du4yhk6jfyfafml3nh22kne.workers.dev",
+        "server_name": "2-gys60wmzb6bqzd.qpsjn114hh3vlph9z60sesz0agjawpwroneg.workers.dev",
         "insecure": false,
         "utls": {
           "enabled": true,
@@ -22,60 +22,35 @@
         "type": "ws",
         "path": "/@Marisa_kristi",
         "headers": {
-          "Host": "9-7u3b6e.wzkija0v0du4yhk6jfyfafml3nh22kne.workers.dev"
+          "Host": "2-gys60wmzb6bqzd.qpsjn114hh3vlph9z60sesz0agjawpwroneg.workers.dev"
         }
       }
     },
     {
-      "type": "hysteria2",
-      "tag": "🇭🇰 中国香港 (Hong Kong) 02 (家宽)",
-      "server": "e6b91583-tm96o0-tnhquc-1j0a4.hk3.hyhuawei.com",
-      "server_port": 443,
-      "password": "4eedcde6-d16a-11ef-973a-f23c913c8d2b",
-      "tls": {
-        "enabled": true,
-        "server_name": "e6b91583-tm96o0-tnhquc-1j0a4.hk3.hyhuawei.com",
-        "insecure": true
-      }
+      "type": "vless",
+      "tag": "🇹🇷 土耳其 (Turkey) 02 (移动家宽)",
+      "server": "82.47.63.156",
+      "server_port": 2053,
+      "uuid": "9ef61079-6f7d-4911-9608-943da85d8e6f"
     },
     {
-      "type": "hysteria2",
-      "tag": "🇭🇰 中国香港 (Hong Kong) 03 (家宽)",
-      "server": "3d0bb862-tm96o0-tnhquc-1j0a4.nw4.hyhuawei.com",
-      "server_port": 443,
-      "password": "4eedcde6-d16a-11ef-973a-f23c913c8d2b",
-      "tls": {
-        "enabled": true,
-        "server_name": "3d0bb862-tm96o0-tnhquc-1j0a4.nw4.hyhuawei.com",
-        "insecure": true
-      }
+      "type": "shadowsocks",
+      "tag": "🇹🇼 中国台湾 (Taiwan) 03 (家宽)",
+      "server": "namrcg001640lrm.cybervena.com",
+      "server_port": 50099,
+      "method": "chacha20-ietf-poly1305",
+      "password": "7b56aeaa-8e2d-4bdf-b1d7-233ecca15f56"
     },
     {
-      "type": "hysteria2",
+      "type": "anytls",
       "tag": "🇭🇰 中国香港 (Hong Kong) 04 (家宽)",
-      "server": "hk01.kfc-520.com",
-      "server_port": 60001,
-      "password": "8cb0c4fb-03ee-35b8-a47b-cd1d7e76dfd3",
-      "tls": {
-        "enabled": true,
-        "server_name": "hk01.kfc-520.com",
-        "insecure": true
-      }
-    },
-    {
-      "type": "vmess",
-      "tag": "🇹🇼 中国台湾 (Taiwan) 05 (家宽)",
-      "server": "24864168545164.oylfmxz.cn",
+      "server": "ac7548f3ebe045b39a90288ff1e97528.pnuqcnp.cn",
       "server_port": 443,
-      "uuid": "d90e4077-bc7e-414d-a650-70bf1baae4d6",
-      "security": "auto",
+      "password": "9sK2mP8xQ7vL3nZ6",
       "tls": {
         "enabled": true,
-        "server_name": "24864168545164.oylfmxz.cn",
+        "server_name": "ac7548f3ebe045b39a90288ff1e97528.lwdnxf.cn",
         "insecure": false
-      },
-      "transport": {
-        "type": "ws"
       }
     },
     {
@@ -84,10 +59,9 @@
       "outbounds": [
         "auto",
         "🇯🇵 日本 (Japan) 01 (家宽)",
-        "🇭🇰 中国香港 (Hong Kong) 02 (家宽)",
-        "🇭🇰 中国香港 (Hong Kong) 03 (家宽)",
-        "🇭🇰 中国香港 (Hong Kong) 04 (家宽)",
-        "🇹🇼 中国台湾 (Taiwan) 05 (家宽)"
+        "🇹🇷 土耳其 (Turkey) 02 (移动家宽)",
+        "🇹🇼 中国台湾 (Taiwan) 03 (家宽)",
+        "🇭🇰 中国香港 (Hong Kong) 04 (家宽)"
       ]
     },
     {
@@ -95,10 +69,9 @@
       "tag": "auto",
       "outbounds": [
         "🇯🇵 日本 (Japan) 01 (家宽)",
-        "🇭🇰 中国香港 (Hong Kong) 02 (家宽)",
-        "🇭🇰 中国香港 (Hong Kong) 03 (家宽)",
-        "🇭🇰 中国香港 (Hong Kong) 04 (家宽)",
-        "🇹🇼 中国台湾 (Taiwan) 05 (家宽)"
+        "🇹🇷 土耳其 (Turkey) 02 (移动家宽)",
+        "🇹🇼 中国台湾 (Taiwan) 03 (家宽)",
+        "🇭🇰 中国香港 (Hong Kong) 04 (家宽)"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

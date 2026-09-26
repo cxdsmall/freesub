@@ -4,18 +4,15 @@
   },
   "outbounds": [
     {
-      "type": "trojan",
+      "type": "vless",
       "tag": "🇧🇬 保加利亚 (Bulgaria) 01",
-      "server": "151.101.56.255",
+      "server": "108.165.233.223",
       "server_port": 443,
-      "password": "MiTiVPN",
+      "uuid": "2388e166-3890-33ae-f77e-efac00000001",
       "tls": {
         "enabled": true,
-        "server_name": "ssl.fastly.com",
+        "server_name": "netlivpn4813.ddhshhshs.workers.dev",
         "insecure": false,
-        "alpn": [
-          "http/1.1"
-        ],
         "utls": {
           "enabled": true,
           "fingerprint": "chrome"
@@ -23,8 +20,9 @@
       },
       "transport": {
         "type": "ws",
+        "path": "/NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN",
         "headers": {
-          "Host": "mitivpn---nl--s---mitivpn-2.global.ssl.fastly.net"
+          "Host": "netlivpn4813.ddhshhshs.workers.dev"
         }
       }
     },

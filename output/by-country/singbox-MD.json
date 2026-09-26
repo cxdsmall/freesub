@@ -4,15 +4,16 @@
   },
   "outbounds": [
     {
-      "type": "hysteria2",
-      "tag": "🇩🇰 丹麦 (Denmark) 01",
-      "server": "se.xiaoliyu.cyou",
-      "server_port": 4433,
-      "password": "19f72087-4591-4d72-930b-2697078ec2be",
+      "type": "vless",
+      "tag": "🇲🇩 摩尔多瓦 (Moldova) 01",
+      "server": "md-new.failspace.top",
+      "server_port": 443,
+      "uuid": "cd3bb7d9-7df3-4644-ac05-c260990ac277",
+      "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "se.xiaoliyu.cyou",
-        "insecure": true
+        "server_name": "md-new.failspace.top",
+        "insecure": false
       }
     },
     {
@@ -20,14 +21,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇩🇰 丹麦 (Denmark) 01"
+        "🇲🇩 摩尔多瓦 (Moldova) 01"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇩🇰 丹麦 (Denmark) 01"
+        "🇲🇩 摩尔多瓦 (Moldova) 01"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
